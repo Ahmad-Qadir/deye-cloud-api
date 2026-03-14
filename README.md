@@ -51,7 +51,7 @@ const { getCloudDevices, getLatestBySn, buildSummary } = require('deye-cloud-api
 
 const token = process.env.DEYE_TOKEN;
 
-const devices = await getCloudDevices(token);
+const devices = await getCloudDevices(token ,1, 50);
 const snList  = devices.map((d) => d.deviceSn);
 const latest  = await getLatestBySn(token, snList);
 
@@ -141,12 +141,9 @@ npm run smoke-test -- --token <DEYE_TOKEN> --mode body     # body.token
 
 Or set `DEYE_TOKEN` in `.env` and just run `npm run smoke-test`.
 
-## Publish
+## Reference
 
-1. Update `version` in `package.json`.
-2. Run `npm pack --dry-run` to verify package contents.
-3. `npm login`
-4. `npm publish`
+- Author website: [ahmad-qadir.dev](https://ahmad-qadir.dev/)
 
 ## License
 

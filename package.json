@@ -1,0 +1,47 @@
+{
+  "name": "deye-cloud-api",
+  "version": "1.0.0",
+  "description": "Express handler for monitoring Deye cloud inverter status.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "commonjs",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "config.js",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node -e \"console.log('No tests configured yet')\"",
+    "smoke-test": "node smoke-test.js",
+    "prepublishOnly": "npm pack --dry-run"
+  },
+  "keywords": [
+    "deye",
+    "inverter",
+    "solar",
+    "monitoring",
+    "express",
+    "api",
+    "cloud"
+  ],
+  "author": "Ahmad Abdullah Qadir",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "axios": "^1.8.2"
+  },
+  "peerDependencies": {
+    "express": ">=4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

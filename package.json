@@ -1,6 +1,6 @@
 {
   "name": "deye-cloud-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express handler for monitoring Deye cloud inverter status.",
   "main": "index.js",
   "types": "index.d.ts",
